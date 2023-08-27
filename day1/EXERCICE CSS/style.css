@@ -1,0 +1,95 @@
+h3{
+    background-color: blue;
+    color: aliceblue;
+}
+
+h4{
+    color: #27c76b;
+}
+
+.exercice2 {
+    border-color:#27C76B;
+    background-color:#C0F7D7;
+    border-style:ridge; padding: 30px;
+}
+
+
+.exercice2variante{
+    border-color:#27C76B;
+    background-color:#C0F7D7;
+    border-style:dashed; padding: 30px;
+    box-shadow: 10px 10px 5px 5px lightgrey;
+    margin: 20px;
+}
+
+
+
+.flag{
+    height: 100px;
+    display: block;
+
+}
+
+.bleu {
+    height: 50px;
+    width: 30px;
+    background-color: #012597;
+    display: inline-block;
+    margin-right: -5px;
+
+}
+.blanc{
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-right: -5px;
+
+}
+
+.rouge{
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    background-color: red;
+    padding: 0px;
+}
+
+ul li:nth-child(2){
+    color: blue;
+}
+
+div ul{
+    border: 10px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div p:first-child{
+    border: 10px solid red;
+    background-color: pink;
+    color: white;
+}
+
+div p:nth-child(3){
+    border: 10px solid green;
+    background-color: lightblue;
+    padding: auto;
+    margin: auto;
+}
+
+.blue-li {
+    color: blue;
+}
+
+
+.pinkback{
+    background-color: pink;
+    color: white;
+}
+
+.blueback{
+    background-color: lightblue;
+    padding: auto;
+    margin: auto;
+}
