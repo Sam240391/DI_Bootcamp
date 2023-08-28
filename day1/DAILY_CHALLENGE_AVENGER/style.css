@@ -57,7 +57,7 @@ body, ul {
         align-items: center;
         padding: 10px 20px;
     }
-    
+
 }
 
 
@@ -89,19 +89,24 @@ div ol{
 }
 
 footer{
-    margin: auto;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
     color: white;
     background-color: #00a859;
-}
-
-footer li{
     display: flex;
     flex-direction: row;
-    text-align: center;
-    align-content: center;
+    justify-content: center;
+    padding: 10px;
 }
+
+
+footer li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
