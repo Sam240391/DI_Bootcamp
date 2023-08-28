@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shopping Website - HomePage</title>
+  </head>
+  <body>
+    <!-- navbar here -->
+
+<header>
+    <nav>
+        <div class="navbar">
+            <div class="icon"><a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></div>
+            <div class="menu">
+              <a href="products.html">OUR PRODUCTS </a>
+            </div>
+          </div>
+    </nav>
+</header>
+    <!-- footer here -->
+
+
+<footer>
+        <div class="footercontent">&copy; <span id="currentYear"></span> Samuel CHEMLA
+        </div>
+</footer>
+
+
+
+  </body>
+
+  <script>
+    const currentYearElement = document.getElementById("currentYear");
+    const currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+  </script>
+  
+</html>
