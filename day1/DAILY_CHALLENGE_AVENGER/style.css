@@ -103,4 +103,5 @@ footer li{
     display: flex;
     flex-direction: row;
     text-align: center;
+    align-content: center;
 }
