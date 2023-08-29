@@ -1,0 +1,55 @@
+* {
+    font-family: Arial;
+  }
+  
+  body {
+    background-color: white;
+  }
+
+  
+  .box {
+    background-color: #fff;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .conteneur {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 30px;
+  }
+
+.une {
+    background-color: red;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.deux {
+    background-color: blue;
+}
+
+.trois{
+    background-color: red;
+}
+
+.quatre{
+    background-color: blue;
+}
+
+.cinq{
+    background-color: red;
+}
+
+.six{
+    background-color: blue;
+}
+
+.sept {
+    background-color: yellow;
+    grid-column: 1 /3 ;
+}
