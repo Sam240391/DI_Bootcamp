@@ -1,14 +1,16 @@
   /* Navbar container */
   body{
+    height: 100%;
+    width: 100%;
     margin: 0;
   }
 
   .navbar {
     background-color: #333;
-    overflow: hidden;
+    overflow: auto;
+    padding: 10px 50px;
   }
 
-  /* Left-aligned icon */
   .navbar .icon {
     float: left;
     padding: 20px 20px;
@@ -23,11 +25,21 @@
     padding: 20px 20px;
   }
 
+  
   /* Menu link style */
   .navbar .menu a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding-left: 20px;
+  }
+
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+    border: 2px dashed red;
+    padding: 10px;
   }
 
   /* Clear floats */
@@ -37,13 +49,80 @@
     display: table;
   }
 
+  .login-button, .signup-button {
+    background-color: #00C2FF;
+    color: #ffffff;
+    font-size: large;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover, .signup-button:hover {
+    background-color: #36384e;
+  }
+
+
+
+  .login-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .login-box {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .login-box input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .login-box input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* Sticky footer */
-  .footercontent {
+
+  footer {
+    margin-top: 250px;
     position: sticky;
     bottom: 0;
     width: 100%;
+    overflow: hidden;
     background-color: #333;
     color: white;
     padding: 10px 0;

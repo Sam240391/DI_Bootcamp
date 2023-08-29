@@ -1,0 +1,38 @@
+
+
+.container{
+    border: 2px solid red;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#item1{
+    width: 20%;
+    height: 100%;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#item2{
+    width: 40%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#item3{
+    width: 40%;
+    height: 100%;
+    background-color:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
