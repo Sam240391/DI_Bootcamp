@@ -29,21 +29,23 @@
 
 # -----------------
 
-user_month = input('In which month we are ? choose a number between 1 and 12!  \n"')
+# user_month = input('In which month we are ? choose a number between 1 and 12!  \n"')
 
-month = int(user_month)
-print(month)
+# month = int(user_month)
+# print(month)
 
 
-if 1 <= month <= 2 or month == 12:
-    print("We are in Winter")
-elif 3 <= month <= 5:
-    print('We are in spring')
-elif 6 <= month <= 8:
-    print('We are in Summer')
-elif 9 <= month <= 11:
-    print('We are in Autumn')
-else:
-    print('You didn"t pick number between 1 and 12')
+# if 1 <= month <= 2 or month == 12:
+#     print("We are in Winter")
+# elif 3 <= month <= 5:
+#     print('We are in spring')
+# elif 6 <= month <= 8:
+#     print('We are in Summer')
+# elif 9 <= month <= 11:
+#     print('We are in Autumn')
+# else:
+#     print('You didn"t pick number between 1 and 12')
+
+
 
 
