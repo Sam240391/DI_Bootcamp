@@ -57,19 +57,55 @@
 
 
 
-sentence_user = input(f'Write the longest sentence you can without the character "A": \n ' )
+# sentence_user = input(f'Write the longest sentence you can without the character "A": \n ' )
 
-lenght_sentence =  0
+# lenght_sentence =  0
 
 
 
-if  'a' in sentence_user and len(sentence_user) > lenght_sentence :
-    lenght_sentence = len(sentence_user)
-    print('Congratulation it"s a new record your sentence made {lenght_sentence} ')
+# if  'a' in sentence_user and len(sentence_user) > lenght_sentence :
+#     lenght_sentence = len(sentence_user)
+#     print('Congratulation it"s a new record your sentence made {lenght_sentence} ')
+# else:
+#     print(f'your sentence contains the letter a or you sentence made only {lenght_sentence} character it"s too short ')
+
+
+
+# print(lenght_sentence)
+
+
+
+
+
+# Initialize variables
+longest_sentence = ""
+max_length = 0
+attempts = 0
+
+# Keep asking for input until the user enters "quit"
+while True:
+    sentence = input("Enter the longest sentence without the character 'A' (or 'quit' to exit): ")
+    
+    # Check if the user wants to quit
+    if sentence.lower() == "quit":
+        break
+    
+    # Check if the sentence contains 'A'
+    if "a" in sentence:
+        print("Sorry, the sentence contains the character 'A'. Try again.")
+        continue
+    
+    # Check if the sentence is longer than the current longest sentence without 'A'
+    if len(sentence) > max_length:
+        max_length = len(sentence)
+        longest_sentence = sentence
+        print("Congratulations! You have a new longest sentence without 'A'.")
+    
+    attempts += 1
+
+# Print the results
+if longest_sentence:
+    print("Longest sentence without 'A':", longest_sentence)
 else:
-    print(f'your sentence contains the letter a or you sentence made only {lenght_sentence} character it"s too short ')
-
-
-
-print(lenght_sentence)
-
+    print("No valid sentence entered.")
+print("Total attempts:", attempts)
