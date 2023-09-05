@@ -50,3 +50,22 @@
 #         result += user_input[i]
 
 # print("String with consecutive duplicates removed:", result)
+
+# --------------------
+
+user_input = input("Enter a string: ")
+
+result = user_input[0]
+
+# result = t
+
+for number in range(1, len(user_input)):
+    if  user_input[number] != result[-1]:
+        result += user_input[number]
+
+
+print(result)
+
+
+
+
