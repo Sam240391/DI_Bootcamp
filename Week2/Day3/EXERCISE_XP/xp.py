@@ -212,43 +212,43 @@
 
 
 
-# users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
 
-# disney_user_A = {}
+disney_user_A = {}
 
-# for i in range(len(users)):
-#     disney_user_A[users[i]] = i
+for i in range(len(users)):
+    disney_user_A[users[i]] = i
 
-# print(disney_user_A)
-
-
-# disney_user_B = {}
-
-# for i in range(len(users)):
-#     disney_user_B[i] = users[i]
-
-# print(disney_user_B)
+print(disney_user_A)
 
 
-# list_order_alpha_key = list(disney_user_A.keys())
-# list_order_alpha_value = list(disney_user_A.values())
-# print(list_order_alpha_key)
-# print(list_order_alpha_value)
-# list_order_alpha_key.sort()
-# print(list_order_alpha_key)
+disney_user_B = {}
+
+for i in range(len(users)):
+    disney_user_B[i] = users[i]
+
+print(disney_user_B)
 
 
-# disney_users_C = dict(zip(list_order_alpha_key, list_order_alpha_value))
+list_order_alpha_key = list(disney_user_A.keys())
+list_order_alpha_value = list(disney_user_A.values())
+print(list_order_alpha_key)
+print(list_order_alpha_value)
+list_order_alpha_key.sort()
+print(list_order_alpha_key)
 
 
-# print(disney_users_C)
+disney_users_C = dict(zip(list_order_alpha_key, list_order_alpha_value))
+
+
+print(disney_users_C)
 
 
 
 
-# users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
 
-# disney_user_A = {}
+disney_user_A = {}
 
 # first way to fo that with len
 
@@ -262,8 +262,8 @@
 # another way with startwith
  
 
-# for i, name in enumerate(users):
-#     if name.startswith(('M' , 'P')):
-#        disney_user_A.update({name:i})
+for i, name in enumerate(users):
+    if name.startswith(('M' , 'P')):
+       disney_user_A.update({name:i})
     
-# print(disney_user_A)
+print(disney_user_A)

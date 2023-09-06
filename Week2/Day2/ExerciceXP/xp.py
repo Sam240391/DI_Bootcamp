@@ -126,16 +126,20 @@
 # Using a for loop, that loops from 1 to 20(inclusive), print out every element which has an even index.
 # -------------
 
-# for number in range(1, 21):
+# for number in range(1, 22):
 #     print(number)
 
 
-# for number in range(1, 21):
+# for number in range(1, 22):
 #     if number % 2 == 0:
 #         print(number)
 
 
+numbers = list(range(1, 21))
 
+for num in range(len(numbers)):
+    if num % 2 == 0:
+        print(numbers[index]) 
 
 # 🌟 Exercise 6 : While Loop
 # Instructions
@@ -276,30 +280,29 @@
 # I made your egg sandwich
 # I made your chicken sandwich
 
-sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
+# sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich", "Egg sandwich", "Chicken sandwich", "Pastrami sandwich"]
 
-finished_sandwiches = []
-index = 0
+# finished_sandwiches = []
+# index = 0
 
-print(len(sandwich_orders))
+# print(len(sandwich_orders))
 
-while "Pastrami sandwich" in sandwich_orders:
-    sandwich_order = sandwich_orders.remove("Pastrami sandwich")
-
-
-while sandwich_orders:
-    current_sandwich = sandwich_orders.pop(0)  
-    finished_sandwiches.append(current_sandwich)  
-    print(f"Making {current_sandwich}")
+# while "Pastrami sandwich" in sandwich_orders:
+#     sandwich_order = sandwich_orders.remove("Pastrami sandwich")
 
 
-print("\nList of finished sandwiches:")
-for sandwich in finished_sandwiches:
-    print(f'I made your {sandwich}')
+# while sandwich_orders:
+#     current_sandwich = sandwich_orders.pop(0)  
+#     finished_sandwiches.append(current_sandwich)  
+#     print(f"Making {current_sandwich}")
 
 
-print(sandwich_orders)
+# print("\nList of finished sandwiches:")
+# for sandwich in finished_sandwiches:
+#     print(f'I made your {sandwich}')
 
-print(finished_sandwiches)
 
-# print(f'Allowed teenagers to watch the movie: {" ".join(teenagers)}')
+# print(sandwich_orders)
+
+# print(finished_sandwiches)
+
