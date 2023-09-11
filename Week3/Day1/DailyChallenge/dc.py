@@ -27,12 +27,10 @@ class Farm:
         
         def get_short_info(self):
              list_animal = self.get_animal_types()
-             list_animal = self.get_animal_types()
-             last_animal = list_animal[-1]
-             print(last_animal)
-             animals = "s, ".join(list_animal[0:-1])
+             animals = ", ".join(list_animal[0:-1])
+             sentence = print(f'{self.name}"s farm has {animals}s and {list_animal[-1]}')
+             return sentence
 
-             return print(f'{self.name}"s farm has {animals}s and {last_animal}')
 
          
 macdonald = Farm("McDonald")
