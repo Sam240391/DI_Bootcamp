@@ -6,6 +6,18 @@ class Employee :
         self.job = job
         self.salary = salary
     
+    def __gt__(self, other):
+        return self.salary > other.salary
+
+    def __add__(self, other):
+        total_salary = self.salary + other.salary
+        return total_salary
+
+    def __str__(self):
+        return f"Employee: {self.get_fullname()}, Age: {self.age}, Job: {self.job}, Salary: {self.salary}"
+
+
+
     def get_fullname(self) :
         return f"{self.firstname} {self.lastname}"
     
@@ -31,26 +43,41 @@ class Employee :
 # --> random age from 18 to 67
 # --> random salary from 10000 to 45000
 
-import random
+# import random
 
-lst_names = ["John", "Lea", "Emma", "Josh", "Eli"]
-lst_lastnames = ["Cohen", "Smith", "Doe", "Sevi", "Swtazh"]
-lst_jobs = ["developer", "dancer", "cowboy", "tennis player", "doctor"]
+# lst_names = ["John", "Lea", "Emma", "Josh", "Eli"]
+# lst_lastnames = ["Cohen", "Smith", "Doe", "Sevi", "Swtazh"]
+# lst_jobs = ["developer", "dancer", "cowboy", "tennis player", "doctor"]
 
-def programemployee():
-    list_employees = []
+# def programemployee():
+#     list_employees = []
 
-    for _ in range(10):
-        first_name = random.choice(lst_names)
-        last_name = random.choice(lst_lastnames)
-        job = random.choice(lst_jobs)
-        age = random.randint(18, 67)
-        salary = random.randint(10000, 45000)
-        employee = Employee(first_name, last_name, job, age, salary)
-        list_employees.append(employee)
+#     for _ in range(10):
+#         first_name = random.choice(lst_names)
+#         last_name = random.choice(lst_lastnames)
+#         job = random.choice(lst_jobs)
+#         age = random.randint(18, 67)
+#         salary = random.randint(10000, 45000)
+#         employee = Employee(first_name, last_name, job, age, salary)
+#         list_employees.append(employee)
 
-    for employee in list_employees: 
-       employee.show_info()
+#     for employee in list_employees: 
+#        employee.show_info()
 
 
-programemployee()
+# programemployee()
+
+
+employee1 = Employee("John", "Doe", 30, "Software Engineer", 60000)
+employee2 = Employee("Jane", "Smith", 28, "Data Analyst", 55000)
+
+if employee1 > employee2:
+    print(f"{employee1.get_fullname()} has a higher salary.")
+else:
+    print(f"{employee2.get_fullname()} has a higher salary.")
+
+total_salary = employee1 + employee2
+print(f"The total salary of {employee1.get_fullname()} and {employee2.get_fullname()} is {total_salary}")
+
+print(employee1)
+print(employee2)
