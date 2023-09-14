@@ -173,4 +173,27 @@
 # Create a function that adds new dictionaries to the users list. Each user has the following keys: name, adress, langage_code. Use faker to populate them with fake data.
 
 
+from faker import Faker
+
+fake = Faker()
+
+users = []
+
+def add_user():
+    user = {
+        "name": fake.name(),              
+        "address": fake.address(),         
+        "language_code": fake.language_code()  
+    }
+    users.append(user)
+
+for _ in range(5):
+    add_user()
+
+for index, user in enumerate(users, start=1):
+    print(f"User {index}:")
+    print(f"Name: {user['name']}")
+    print(f"Address: {user['address']}")
+    print(f"Language Code: {user['language_code']}")
+    print()
 
