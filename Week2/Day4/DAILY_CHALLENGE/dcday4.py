@@ -44,39 +44,71 @@
 
 
 
-matrix_string = """\
-7ii
-Tsx
-h%?
+# matrix_string = """\
+# 7ii
+# Tsx
+# h%?
+# i #
+# sM 
+# $a 
+# #t%
+# ^r!"""
+
+
+
+
+# matrix = [list(row) for row in matrix_string.splitlines()]
+# matrix_rows = matrix_string.splitlines()
+
+# print(matrix)
+
+# num_columns = len(matrix[0])
+# print(num_columns)
+
+# decoded_message = []
+
+# for col in range(num_columns):
+#     column_data = []  
+#     for row in range(len(matrix)):
+#         char = matrix[row][col]
+#         if char.isalnum():  
+#             column_data.append(char)
+  
+#     decoded_message.extend(column_data)
+
+# decoded_message = ''.join(decoded_message)
+
+# # Print the decoded message
+# print(decoded_message)
+
+
+secret = """7i3
+Tsi
+h%x
 i #
 sM 
 $a 
 #t%
 ^r!"""
 
+def create_colums() :
+    secret_list = list(secret.split("\n"))
+    lst = []
+    for num in range(3) :
+        lst.append([char[num] for char in secret_list])
 
+    return lst
 
+def decode() :
+    secret = create_colums()
+    # print("secret list", secret)
+    final = ""
+    for arr in secret :
+        for char in arr :
+            if str(char).isalpha() :
+                    final += char
+            else :
+                final += " "
+    print(final)
 
-matrix = [list(row) for row in matrix_string.splitlines()]
-matrix_rows = matrix_string.splitlines()
-
-print(matrix)
-
-num_columns = len(matrix[0])
-print(num_columns)
-
-decoded_message = []
-
-for col in range(num_columns):
-    column_data = []  
-    for row in range(len(matrix)):
-        char = matrix[row][col]
-        if char.isalnum():  
-            column_data.append(char)
-  
-    decoded_message.extend(column_data)
-
-decoded_message = ''.join(decoded_message)
-
-# Print the decoded message
-print(decoded_message)
+decode()
