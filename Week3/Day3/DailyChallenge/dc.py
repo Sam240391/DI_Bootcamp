@@ -54,32 +54,32 @@ class Circle:
         else:
             raise TypeError("Unsupported operand type for ==: 'Circle' and {}".format(type(other)))
 
-# Example usage:
+
 c1 = Circle(5)
 c2 = Circle(3)
 
-print(c1.radius)  # 5
-print(c1.diameter)  # 10
-print(c1.area())  # 78.53981633974483
+print(c1.radius)  
+print(c1.diameter)  
+print(c1.area())  
 
 c3 = c1 + c2
-print(c3.radius)  # 8
-print(c3.diameter)  # 16
+print(c3.radius)  
+print(c3.diameter) 
 
-print(c1 < c2)  # False
-print(c1 == c2)  # False
+print(c1 < c2)  
+print(c1 == c2)  
 
-# Sort circles by radius
+
 circles = [Circle(4), Circle(2), Circle(6), Circle(1)]
 sorted_circles = sorted(circles)
 for circle in sorted_circles:
     print(circle)
 
-# Drawing circles using Turtle (requires Turtle module)
+
 def draw_circle(circle):
     turtle.circle(circle.radius * 10)
 
-turtle.speed(0)  # Fastest drawing speed
+turtle.speed(0)  
 for circle in sorted_circles:
     draw_circle(circle)
 turtle.done()
