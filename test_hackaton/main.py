@@ -151,7 +151,7 @@ def main():
     print(f'Welcome to our QUIZZ')
     print('-----------------------')
     
-    user_amount_question = 10
+    user_amount_question = 3
 
     play_game (user_amount_question, ask_category())
 
