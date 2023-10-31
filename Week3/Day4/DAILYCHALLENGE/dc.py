@@ -51,3 +51,32 @@ print(text_instance.most_common_word())
 print(text_instance.unique_words())
 
 
+import string
+from nltk.corpus import stopwords
+import re
+
+class TextModification(Text):
+    def __init__(self, text):
+        super().__init__(text)
+
+    def remove_punct(self):
+        translator = str.maketrans('', '', string.punctuation)
+        text_no_punct = self.text.translate(translator)
+        return text_no_punct
+
+    def remove_stopwords(self):
+        import nltk
+        nltk.download('stopwords')
+        english_stopwords = set(stopwords.words("english"))     
+
+        words_list = self.text.split()
+
+        filtered_words = [word for word in words_list if word.lower() not in english_stopwords]
+
+        text_no_stopwords = " ".join(filtered_words)
+        return text_no_stopwords
+
+    def remove_spec_char(self):
+        text_no_spec_chars = re.sub(r'[^A-Za-z0-9\s]', '', self.text)
+        return text_no_spec_chars
+
